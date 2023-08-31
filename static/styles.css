@@ -1,0 +1,90 @@
+/* Reset default margin and padding */
+body, h1, ul, li, form {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form {
+    padding-top: 20px;
+}
+
+/* Set a background color for the entire page */
+body {
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Style the main container */
+.card {
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style the task list */
+ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+/* Style individual task items */
+li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Style the "Complete" and "Delete" links */
+a {
+    color: #007bff;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Style the task input form */
+.task-form {
+    margin-top: 40px; 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Style the task input field */
+.task-input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+/* Style the "Add Task" button */
+.task-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: center;
+}
+
+.completed {
+    color: #4caf50; /* Green color for completed tasks */
+    text-decoration: line-through; /* Add a line-through effect */
+}

@@ -1,0 +1,21 @@
+<!-- index.html -->
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<div class="card">
+    <ul>
+        {% for task in tasks %}
+            <li>
+                <div class="task-content {{ 'completed' if task.completed else '' }}">{{ task.content }}</div>
+                <div class="task-actions">
+                    <a href="/complete/{{ task.id }}" class="complete-link">Complete</a>
+                    <a href="/delete/{{ task.id }}" class="delete-link">Delete</a>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>    
+        <form action="/add" method="POST">
+            <input type="text" name="content" placeholder="New task">
+            <button type="submit">Add</button>
+        </form>
+</div>
