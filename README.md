@@ -23,18 +23,23 @@ A simple to-do list web application built using Flask and SQLAlchemy.
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/your-username/flask-todo.git
+   git clone https://github.com/Shardy678/flask-todo.git
    cd flask-todo
    ```
+2. Install dependencies:
 
-2. Create a virtual environment (optional but recommended):
+   ```sh
+   pip install flask flask-sqlalchemy
+   ```
+
+3. Create a virtual environment (optional but recommended):
 
     ```sh
     python3 -m venv venv
     source venv/bin/activate
     ```
 
-3. Run the application:
+4. Run the application:
 
     ```sh
     python main.py
